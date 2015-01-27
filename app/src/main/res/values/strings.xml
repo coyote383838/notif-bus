@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="addJourney">Ajouter un trajet</string>
+    <string name="app_name">NotifBus</string>
+    <string name="app_version">Version 2.1</string>
+    <string name="app_author">by coyot (coyot@coyot.fr)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Préférences</string>
+    <string name="title_activity_destination">DestinationActivity</string>
+    <string name="title_activity_line">Ajouter un trajet</string>
+    <string name="title_activity_notification_receiver">NotificationReceiverActivity</string>
+    <string name="title_activity_origin">OriginActivity</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+    <string name="geotag_journey">Arrêts géolocalisés</string>
+    <string name="space_geotag_lines">5dp</string>
+    <string name="morning_journey">Trajet du matin</string>
+    <string name="evening_journey">Trajet du soir</string>
+    
+    
+    <string name="searchStopWithId">Rechercher un arrêt par son identifiant</string>
+    <string name="searchStopWithLine">Ou sélectionner une ligne</string>
+    <string name="choiceDestination">Sélectionner la destination</string>
+    <string name="choiceStop">Sélectionner l\'arrêt</string>
+    <string name="stopId">Identifiant de l\'arrêt</string>
+    <string name="nextSchedules">Prochains passages</string>
+    <string name="searchStop">Chercher</string>
+    
+    
+    <string name="exit">Quitter</string>
+    <string name="about">A propos</string>
+    <string name="txt_licence">Les données proviennent de l\'API temps réel TISSEO et sont soumis à la licence ODbl</string>
+    <string name="url_licence">http://data.toulouse-metropole.fr/la-licence</string>
+    <string name="action_settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_geo_tag">Arrêts a proximité</string>
+
+</resources>

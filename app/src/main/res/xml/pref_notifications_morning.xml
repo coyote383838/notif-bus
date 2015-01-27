@@ -1,0 +1,45 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <CheckBoxPreference 
+        android:key="@string/key_pref_morning_activate"
+        android:title="@string/pref_notif_activate"
+        android:defaultValue="true"/>
+    
+    <ListPreference 
+        android:key="@string/key_pref_interval"
+        android:title="@string/pref_interval"
+        android:entries="@array/interval_titles"
+        android:entryValues="@array/interval_values"
+        android:defaultValue="2"
+        android:dependency="@string/key_pref_morning_activate"/>
+        
+    <ListPreference 
+        android:key="pref_key_morning_hour"
+        android:title="@string/pref_hour"
+        android:entries="@array/morning_hour_titles"
+        android:entryValues="@array/morning_hour_values"
+        android:defaultValue="480"
+        android:dependency="@string/key_pref_morning_activate"/>
+    
+    <ListPreference 
+        android:key="pref_key_morning_duration"
+        android:title="@string/pref_duration"
+        android:entries="@array/duration_titles"
+        android:entryValues="@array/duration_values"
+        android:defaultValue="30"
+        android:dependency="@string/key_pref_morning_activate"/>
+    
+    <MultiSelectListPreference 
+        android:key="@string/key_pref_days_morning"
+        android:title="@string/pref_days_notif"
+        android:entries="@array/days_titles"
+        android:entryValues="@array/days_values"
+        android:defaultValue="@array/days_default"
+        android:dependency="@string/key_pref_morning_activate"/>
+    
+    <EditTextPreference 
+	    android:key="@string/key_pref_max_days_morning"
+	    android:defaultValue="0"/>
+   
+
+</PreferenceScreen>

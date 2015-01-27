@@ -1,0 +1,216 @@
+<resources>
+
+    <string name="pref_activity_title">Settings</string>
+    
+    <string name="pref_notification_morning">Notifications trajet matin</string>
+    <string name="pref_notification_evening">Notifications trajet soir</string>
+    <string name="pref_geo_tag">Géolocalisation</string>
+    <string name="pref_notif_activate">Activer les notifications</string>
+    
+    <!-- <string name="pref_morning_journey">Trajets matin</string>
+    <string name="pref_evening_journey">Trajets soir</string> -->
+    
+    <string name="pref_hour">Heure de début</string>
+    <string name="pref_duration">Durée</string>
+    <string name="pref_interval">Intervalle de rafraîchissement</string>
+    
+    <string name="pref_distance_geotag">Rayon de recherche des arrêts</string>
+    <string name="key_pref_distance_geotag">pref_key_distance_geotag</string>
+    
+    <string name="key_pref_interval">pref_key_interval</string>
+    <string name="key_pref_days_morning">pref_key_day_morning</string>
+    <string name="key_pref_days_evening">pref_key_day_evening</string>
+    <string name="key_pref_morning_activate">pref_key_activate_morning</string>
+    <string name="key_pref_evening_activate">pref_key_activate_evening</string>
+    <string name="key_pref_max_days_evening">pref_key_max_days_evening</string>
+    <string name="key_pref_max_days_morning">pref_key_max_days_morning</string>
+    
+    <string name="pref_days_notif">Jours</string>
+    
+    <string-array name="distances_title">
+        <item >100 m</item>
+        <item >250 m</item>
+        <item >500 m</item>
+        <item >750 m</item>
+        <item >1 km</item>
+        <item >1,5 km</item>
+        <item >2 kms</item>
+        <item >5 kms</item>
+    </string-array>
+    
+    <string-array name="distances">
+        <item >100.0</item>
+        <item >250.0</item>
+        <item >500.0</item>
+        <item >750.0</item>
+        <item >1000.0</item>
+        <item >1500.0</item>
+        <item >2000.0</item>
+        <item >5000.0</item>
+    </string-array>
+    
+    <string-array name="days_titles">
+        <item >Lundi</item>
+        <item >Mardi</item>
+        <item >Mercredi</item>
+        <item >Jeudi</item>
+        <item >Vendredi</item>
+        <item >Samedi</item>
+        <item >Dimanche</item>
+    </string-array>
+    
+    <string-array name="days_values">
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >1</item>
+    </string-array>
+    
+    <string-array name="days_default">
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+    </string-array>
+    
+    <string-array name="morning_hour_titles">
+        <item>5h30</item>
+        <item>6h</item>
+        <item>6h30</item>
+        <item>7h</item>
+        <item>7h30</item>
+        <item>7h45</item>
+        <item>8h</item>
+        <item>8h15</item>
+        <item>8h30</item>
+        <item>8h45</item>
+        <item>9h</item>
+        <item>9h30</item>
+        <item>10h</item>
+        <item>10h30</item>
+        <item>11h</item>
+        <item>11h30</item>
+        <item>12h</item>
+    </string-array>
+    
+    <string-array name="morning_hour_values">
+        <item>330</item>
+        <item>360</item>
+        <item>390</item>
+        <item>420</item>
+        <item>450</item>
+        <item>465</item>
+        <item>480</item>
+        <item>495</item>
+        <item>510</item>
+        <item>525</item>
+        <item>540</item>
+        <item>570</item>
+        <item>600</item>
+        <item>630</item>
+        <item>660</item>
+        <item>690</item>
+        <item>720</item>
+    </string-array>
+    
+    <string-array name="evening_hour_titles">
+        <item>12h</item>
+        <item>12h30</item>
+        <item>13h</item>
+        <item>13h30</item>
+        <item>14h</item>
+        <item>14h30</item>
+        <item>15h</item>
+        <item>15h30</item>
+        <item>16h</item>
+        <item>16h30</item>
+        <item>17h</item>
+        <item>17h30</item>
+        <item>17h45</item>
+        <item>18h</item>
+        <item>18h15</item>
+        <item>18h30</item>
+        <item>19h</item>
+        <item>19h30</item>
+        <item>20h</item>
+    </string-array>
+    
+    <string-array name="evening_hour_values">
+        <item>720</item>
+        <item>750</item>
+        <item>780</item>
+        <item>810</item>
+        <item>840</item>
+        <item>870</item>
+        <item>900</item>
+        <item>930</item>
+        <item>960</item>
+        <item>990</item>
+        <item>1020</item>
+        <item>1050</item>
+        <item>1065</item>
+        <item>1080</item>
+        <item>1095</item>
+        <item>1110</item>
+        <item>1140</item>
+        <item>1170</item>
+        <item>1200</item>
+    </string-array>
+    
+    <string-array name="interval_titles">
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>3 min</item>
+        <item>4 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+    </string-array>
+    
+    <string-array name="interval_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    
+    <string-array name="duration_titles">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>20 min</item>
+        <item>25 min</item>
+        <item>30 min</item>
+        <item>45 min</item>
+        <item>1 h</item>
+        <item>1 h 30 min</item>
+        <item>2 h</item>
+        <item>3 h</item>
+    </string-array>
+    
+    <string-array name="duration_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>180</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <ListPreference 
+        android:key="@string/key_pref_distance_geotag"
+        android:title="@string/pref_distance_geotag"
+        android:entries="@array/distances_title"
+        android:entryValues="@array/distances"
+        android:defaultValue="500"/>
+   
+
+</PreferenceScreen>

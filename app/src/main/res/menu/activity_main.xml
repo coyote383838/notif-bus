@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/addJourneyItem"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/addJourney"/>
+    
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    
+    <item 
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/about"/>
+    
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/exit"/>
+    
+    <item 
+        android:id="@+id/geolocalisationActionBar"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/geolocalisation"/>
+    
+    <item
+        android:id="@+id/addJourneyItemActionBar"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/plus"/>
+    
+    <item
+        android:id="@+id/settingsActionBar"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/settings"/>
+    
+</menu>

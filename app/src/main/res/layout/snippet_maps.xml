@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+     <LinearLayout 
+        android:id="@+id/layoutSnippetTitle" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    <TextView android:id="@+id/SnippetTitle"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:textStyle="bold"/>
+	    
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/layoutSnippet" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+        <TextView android:id="@+id/SnippetLine0"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine1"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine2"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine3"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine4"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine5"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	</LinearLayout>
+     
+    <LinearLayout 
+        android:id="@+id/layoutSnippet2" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:visibility="gone">
+	    
+        <TextView android:id="@+id/SnippetLine6"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine7"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine8"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine9"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine10"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine11"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	</LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/layoutSnippet3" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:visibility="gone">
+	    
+        <TextView android:id="@+id/SnippetLine12"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine13"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine14"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine15"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine16"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+	    
+	    <TextView android:id="@+id/SnippetLine17"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_marginRight="5dp"/>
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:id="@+id/layoutSnippetDistance" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    <TextView android:id="@+id/SnippetName"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"/>
+	    
+	</LinearLayout>
+	
+</LinearLayout>

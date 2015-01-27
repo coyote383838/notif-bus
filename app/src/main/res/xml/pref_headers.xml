@@ -1,0 +1,19 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- <header 
+        android:fragment="com.example.prefs.SettingsActivity$SettingsFragmentTwo"
+        android:title="@string/notification" />
+         key/value pairs can be included as arguments for the fragment. 
+        <extra android:name="someKey" android:value="someHeaderValue" /> -->
+<!--     <header 
+        android:fragment="fr.coyot.notifbus.SettingsActivity$HomePagePreferenceFragment"
+        android:title="@string/pref_home_page" /> -->
+	<header 
+        android:fragment="fr.coyot.notifbus.SettingsActivity$NotificationPreferenceFragment"
+        android:title="@string/pref_notification_morning" />
+	<header 
+        android:fragment="fr.coyot.notifbus.SettingsActivity$NotificationEveningPreferenceFragment"
+        android:title="@string/pref_notification_evening" />
+	<header 
+        android:fragment="fr.coyot.notifbus.SettingsActivity$GeoTagFragment"
+        android:title="@string/pref_geo_tag" />
+</preference-headers>

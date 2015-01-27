@@ -1,0 +1,87 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <CheckBoxPreference 
+        android:key="@string/key_pref_evening_activate"
+        android:title="@string/pref_notif_activate"
+        android:defaultValue="true"/>
+    
+    <ListPreference 
+        android:key="@string/key_pref_interval"
+        android:title="@string/pref_interval"
+        android:entries="@array/interval_titles"
+        android:entryValues="@array/interval_values"
+        android:defaultValue="2"
+        android:dependency="@string/key_pref_evening_activate"/>
+        
+	<ListPreference 
+	    android:key="pref_key_evening_hour"
+	    android:title="@string/pref_hour"
+	    android:entries="@array/evening_hour_titles"
+	    android:entryValues="@array/evening_hour_values"
+	    android:defaultValue="1080"
+	    android:dependency="@string/key_pref_evening_activate"/>
+	
+	<ListPreference 
+	    android:key="pref_key_evening_duration"
+	    android:title="@string/pref_duration"
+	    android:entries="@array/duration_titles"
+	    android:entryValues="@array/duration_values"
+	    android:defaultValue="30"
+	    android:dependency="@string/key_pref_evening_activate"/>
+	
+	<MultiSelectListPreference 
+	    android:key="@string/key_pref_days_evening"
+	    android:title="@string/pref_days_notif"
+	    android:entries="@array/days_titles"
+	    android:entryValues="@array/days_values"
+	    android:defaultValue="@array/days_default"
+	    android:dependency="@string/key_pref_evening_activate"/>
+	
+	<EditTextPreference 
+	    android:key="@string/key_pref_max_days_evening"
+	    android:defaultValue="0"
+	    android:shouldDisableView="true"
+	    android:enabled="false"/>
+    
+    <!-- <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="example_checkbox"
+        android:summary="@string/pref_description_social_recommendations"
+        android:title="@string/pref_title_social_recommendations" /> -->
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+   <!--  <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name" /> -->
+
+	
+
+    <!--
+         NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it.
+    -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+   <!-- <ListPreference
+        android:defaultValue="-1"
+        android:key="listLineMorning"
+        android:title="@string/pref_ligne" />
+   
+   <ListPreference
+        android:defaultValue="-1"
+        android:key="listOrigStopMorning"
+        android:title="@string/pref_arret" />
+   
+   <ListPreference
+        android:defaultValue="-1"
+        android:key="listDestStopMorning"
+        android:title="@string/pref_destination" /> -->
+   
+
+</PreferenceScreen>

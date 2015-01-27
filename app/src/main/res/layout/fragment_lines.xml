@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:id="@+id/RelativeLayoutSearch">
+        
+       <TextView android:id="@+id/TextSearchStopId"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="@string/searchStopWithId"
+			android:textSize="16sp"
+			android:textStyle="bold" 
+			android:layout_centerHorizontal="true"/>
+       
+       <EditText android:id="@+id/SearchStopId"
+           android:inputType="number"
+           android:layout_width="wrap_content" 
+		   android:layout_height="wrap_content"
+		   android:hint="@string/stopId"
+		   android:layout_below="@+id/TextSearchStopId"
+		   android:layout_alignParentLeft="true"/>
+        
+       <Button android:id="@+id/SearchStopButton"
+           android:text="@string/searchStop"
+           android:layout_width="wrap_content" 
+		   android:layout_height="wrap_content"
+		   android:layout_below="@+id/TextSearchStopId"
+		   android:layout_toRightOf="@id/SearchStopId"
+		   android:layout_alignParentRight="true"/>
+        
+       <TextView android:id="@+id/TextSelectedLine"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textSize="16sp"
+			android:textStyle="bold" 
+			android:layout_below="@id/SearchStopId"
+			android:gravity="center"
+			android:paddingTop="10dp"
+			android:visibility="invisible"/>
+       
+       <TextView android:id="@+id/TextSelectedDest"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textSize="16sp"
+			android:layout_below="@id/TextSelectedLine"
+			android:gravity="center"
+			android:visibility="invisible"/>
+       
+       <TextView android:id="@+id/TextSelectedStop"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textSize="16sp"
+			android:layout_below="@id/TextSelectedDest"
+			android:gravity="center"
+			android:visibility="invisible"/>
+       
+       <TextView android:id="@+id/TextNextSchedules"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="@string/nextSchedules"
+			android:textSize="16sp"
+			android:layout_below="@id/TextSelectedStop"
+			android:paddingTop="10dp"
+			android:layout_centerHorizontal="true"
+			android:visibility="invisible"/>
+       
+       <TextView android:id="@+id/TextSchedules"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text=""
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:layout_below="@id/TextNextSchedules"
+			android:paddingTop="10dp"
+			android:paddingBottom="30dp"
+			android:layout_centerHorizontal="true"
+			android:visibility="invisible"/>
+       
+       <TextView android:id="@+id/TextChoiceDestOrStop"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="@string/choiceDestination"
+			android:textSize="16sp"
+			android:textStyle="bold" 
+			android:layout_below="@id/TextSelectedLine"
+			android:layout_centerHorizontal="true"
+			android:paddingTop="5dp"
+			android:visibility="invisible"/>
+       
+       <ListView 
+		    android:id="@+id/ListViewStopLineSelected"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/TextChoiceDestOrStop"
+		    android:layout_centerInParent="true"
+		    android:paddingTop="5dp"
+		    android:visibility="invisible"/>
+       
+       <TextView android:id="@+id/TextSearchByLine"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="@string/searchStopWithLine"
+			android:textSize="16sp"
+			android:textStyle="bold" 
+			android:layout_below="@id/SearchStopId"
+			android:layout_centerHorizontal="true"
+			android:paddingTop="20dp"/>
+        
+		<GridView 
+		    android:id="@+id/GridViewLines"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:numColumns="auto_fit"
+		    android:stretchMode="columnWidth"
+		    android:columnWidth="100dp"
+		    android:layout_below="@id/TextSearchByLine"
+		    android:layout_centerInParent="true"
+		    android:paddingTop="5dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+	     <LinearLayout 
+	        android:id="@+id/layoutStopGeoTagLine" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    
+		    <TextView android:id="@+id/GeoTagShortName"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:height="50dp"
+				android:width="50dp"
+				android:gravity="center"
+				android:layout_marginRight="5dp"
+				android:layout_marginBottom="10dp"
+				android:textStyle="bold"/>
+		    
+		</LinearLayout>
+		
+	     <LinearLayout 
+	        android:id="@+id/layoutStopGeoTagDesc" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    
+		    <TextView android:id="@+id/GeoTagDesc"
+				android:layout_width="wrap_content" 
+				android:height="50dp"
+				android:layout_height="wrap_content"
+				android:gravity="top"/>
+		    
+		</LinearLayout>
+
+</LinearLayout>

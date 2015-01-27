@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".JourneyFragment" >
+        
+    <LinearLayout 
+        android:id="@+id/header_about"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    	
+        <ImageView 
+            android:src="@drawable/info"
+            android:scaleType="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"/>
+        
+	    <TextView 
+	        android:id="@+id/header_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:text="@string/app_name"
+	        android:textSize="25sp"
+	        android:gravity="center"/>
+	    
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/about_version"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/app_version"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+    
+    <TextView 
+        android:id="@+id/about_author"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/app_author"
+        android:textSize="15sp"
+        android:gravity="center"/>
+    
+    <TextView 
+        android:id="@+id/about_licence"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/txt_licence"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:gravity="center"/>
+    
+    <TextView 
+        android:id="@+id/about_licence_url"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/url_licence"
+        android:layout_marginBottom="15dp"
+        android:textSize="15sp"
+        android:gravity="center"/>
+	
+</LinearLayout>
