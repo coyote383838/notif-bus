@@ -38,10 +38,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
+<!--        <activity
             android:name="fr.coyot.notifbus.DestinationActivity"
             android:label="@string/title_activity_destination" >
-        </activity>
+        </activity>-->
         <activity
             android:name="fr.coyot.notifbus.AddJourneyActivity"
             android:label="@string/title_activity_line" >
@@ -50,14 +50,14 @@
             android:name="fr.coyot.notifbus.receiver.NotificationReceiverActivity"
             android:label="@string/title_activity_notification_receiver" >
         </activity>
-        <activity
+<!--        <activity
             android:name="fr.coyot.notifbus.StopActivity"
             android:label="@string/title_activity_origin" >
         </activity>
         <activity
             android:name="fr.coyot.notifbus.ScheduleActivity"
             android:label="@string/title_activity_schedule" >
-        </activity>
+        </activity>-->
         <activity
             android:name="fr.coyot.notifbus.SettingsActivity"
             android:label="@string/pref_activity_title" >

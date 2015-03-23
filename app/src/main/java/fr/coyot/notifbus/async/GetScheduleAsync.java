@@ -1,22 +1,19 @@
 package fr.coyot.notifbus.async;
 
-import java.util.ArrayList;
+import android.app.ProgressDialog;
+import android.os.AsyncTask;
+import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.app.ProgressDialog;
-import android.os.AsyncTask;
-import android.support.v4.app.FragmentActivity;
-import android.util.Log;
-import fr.coyot.notifbus.AddJourneyActivity;
-import fr.coyot.notifbus.JourneyFragment;
+import java.util.ArrayList;
+
 import fr.coyot.notifbus.ListLinesFragment;
-import fr.coyot.notifbus.model.Journey;
 import fr.coyot.notifbus.model.PhysicalStop;
 import fr.coyot.notifbus.model.Schedule;
-import fr.coyot.notifbus.receiver.AlarmReceiver;
 import fr.coyot.notifbus.utils.Constants;
 import fr.coyot.notifbus.utils.Generic;
 import fr.coyot.notifbus.utils.GetHTTP;
@@ -30,13 +27,14 @@ public class GetScheduleAsync extends AsyncTask<String, Void, ArrayList<Schedule
 	private ListLinesFragment context;
 	
 	private PhysicalStop stopSelected;
-	
-	/**
-	 * Constructor 
-	 * @param context
-	 * @param listJourney
-	 */
-	public GetScheduleAsync(ListLinesFragment context, FragmentActivity contextMain, 
+
+    /**
+     *
+     * @param context
+     * @param contextMain
+     * @param stopSelected
+     */
+	public GetScheduleAsync(ListLinesFragment context, FragmentActivity contextMain,
 			PhysicalStop stopSelected){
 		this.context = context;
 		this.contextMain = contextMain;

@@ -56,42 +56,47 @@ public class AlarmReceiver extends BroadcastReceiver {
 	
 	/**
 	 * Display the notification when we have receive data from network
-	 * @param listSchedule
+	 * @param listJourneys
 	 */
 	public void updateUI(ArrayList<Journey> listJourneys) {
 		
-		// Build the simple notification (only one line) 
-		// This notification will be display when we are not the first notification 
-		// in the notification center
-		Builder builder = new NotificationCompat.Builder(context)
-		    	.setContentTitle("Prochains départs")
-		    	.setContentText(Generic.buildNotifContent(listJourneys.get(Generic.firstJourney(listJourneys)), false))
-		    	.setSmallIcon(R.drawable.icone);
-		// Build the intent that will be launch when the user click on the notification
-		Intent clickIntent = new Intent(context, JourneyFragment.class); 
-		TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
-		stackBuilder.addParentStack(MainFragmentActivity.class);
-		stackBuilder.addNextIntent(clickIntent);
-		PendingIntent resultPendingIntent =
-		        stackBuilder.getPendingIntent(0,PendingIntent.FLAG_UPDATE_CURRENT);
-		builder.setContentIntent(resultPendingIntent);
+		// If the first journey of the listJourneys has a schedule equal to null,
+		// there was a problem during the retrieve of schedules (maybe we are in th subway)
+        // Nothing is done on the notification and we scheduled the next refresh
+        if (listJourneys != null && listJourneys.get(0).listSchedules.get(0).scheduleTime != null) {
+            // Build the simple notification (only one line)
+            // This notification will be display when we are not the first notification
+            // in the notification center
+            Builder builder = new NotificationCompat.Builder(context)
+                    .setContentTitle("Prochains départs")
+                    .setContentText(Generic.buildNotifContent(listJourneys.get(Generic.firstJourney(listJourneys)), false))
+                    .setSmallIcon(R.drawable.icone);
+            // Build the intent that will be launch when the user click on the notification
+            Intent clickIntent = new Intent(context, JourneyFragment.class);
+            TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
+            stackBuilder.addParentStack(MainFragmentActivity.class);
+            stackBuilder.addNextIntent(clickIntent);
+            PendingIntent resultPendingIntent =
+                    stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+            builder.setContentIntent(resultPendingIntent);
 
-		Intent stopNotifIntent = new Intent(context, StopNotifReceiver.class);
-		PendingIntent stopNotifPIntent = 
-				PendingIntent.getBroadcast(context, 192837, stopNotifIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-		
-		builder.addAction(R.drawable.validate, "J'y suis !", stopNotifPIntent);
-		
-		// Add the big notification that will be display if we are the first notification
-		// in the notification center
-		builder.setStyle(Generic.getInboxStyle(builder, listJourneys));
-		// Set the auto cancel notification flag
-		builder.setAutoCancel(true);
+            Intent stopNotifIntent = new Intent(context, StopNotifReceiver.class);
+            PendingIntent stopNotifPIntent =
+                    PendingIntent.getBroadcast(context, 192837, stopNotifIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-		NotificationManager notifManager = 
-				(NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-		
-		notifManager.notify(Constants.NOTIFICATION_TAG_NAME, 0, builder.build());
+            builder.addAction(R.drawable.validate, "J'y suis !", stopNotifPIntent);
+
+            // Add the big notification that will be display if we are the first notification
+            // in the notification center
+            builder.setStyle(Generic.getInboxStyle(builder, listJourneys));
+            // Set the auto cancel notification flag
+            builder.setAutoCancel(true);
+
+            NotificationManager notifManager =
+                    (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+            notifManager.notify(Constants.NOTIFICATION_TAG_NAME, 0, builder.build());
+        }
 		
 		// Check if the alarm must be stopped or not
 		if (!Generic.isNotifHaveToBeDisplayed(context)){
